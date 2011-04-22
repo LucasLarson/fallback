@@ -407,7 +407,7 @@
 
   //  Thanks to Dustin Diaz for this clever hack
   //  http://dustindiaz.com/smallest-domready-ever
-  if(/in/(document.readyState)) {
+  if(/in/.test(document.readyState)) {
     window.addEventListener('load', function() {
       $.init();
     }, false);
