@@ -333,6 +333,12 @@
 		e.preventDefault();
 		return false;
       });
+      $.event(row.getElementsByClassName('ffffallback-specify-font')[0], 'change', function(e) {
+           document.getElementById('ffffallback-update').click();
+      });
+      $.event(row.getElementsByClassName('ffffallback-more-values')[0], 'change', function(e) {
+           document.getElementById('ffffallback-update').click();
+      });
 
       fontList.appendChild(row);
 
