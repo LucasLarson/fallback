@@ -322,7 +322,7 @@
       var row = $.createElementWithContent('li', content);
       row.setAttribute('class', 'collapsed');
 
-      $.event(row.getElementsByClassName('ffffallback-disclosure')[0], 'click', function() {
+      $.event(row.getElementsByClassName('ffffallback-disclosure')[0], 'click', function(e) {
         if($.isClassOnElement('collapsed', row)) {
           $.addClassToElement('expanded', row);
           $.removeClassFromElement('collapsed', row);
@@ -330,6 +330,8 @@
           $.addClassToElement('collapsed', row);
           $.removeClassFromElement('expanded', row);
         }
+		e.preventDefault();
+		return false;
       });
 
       fontList.appendChild(row);
