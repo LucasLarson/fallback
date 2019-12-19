@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>FFFFALLBACK - A simple tool for bulletproof web typography.</title>
   <meta name="description" content="Bulletproof web typography, bookmarklet, web fonts">
   <meta name="author" content="Josh Brewer">
@@ -11,8 +11,8 @@
 
   <link rel="shortcut icon" href="/favicon.ico">
 
-  <script type="text/javascript" src="http://use.typekit.com/rbn4gdu.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="http://use.typekit.com/rbn4gdu.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 
   <link rel="stylesheet" href="css/screen.css">
   <!--[if lt IE 9]>
@@ -65,7 +65,7 @@
         Handcrafted by <a href="http://twitter.com/jbrewer">@<span>jbrewer</span></a> and <a href="http://twitter.com/shinypb">@<span>shinypb</span></a>, with love, in San Francisco.</p>
       <p><small>Extra big high-fives to the kind souls whose encouragement brought this to life: <a href="http://twitter.com/TrentWalton">Trent Walton</a>, <a href="http://twitter.com/TimBrown">Tim Brown</a>, <a href="http://twitter.com/Kyle">Kyle Sollenberger</a>, <a href="http://twitter.com/yarcom">Yaron Schoen</a> and <a href="http://twitter.com/aworkinglibrary">Mandy Brown</a>.</small></p>
       <p class="tweet">
-        <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ffffallback.com" data-text="I'm using @ffffallback to help bulletproof my web typography. Check it out!" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ffffallback.com" data-text="I'm using @ffffallback to help bulletproof my web typography. Check it out!" data-count="horizontal">Tweet</a><script src="http://platform.twitter.com/widgets.js"></script>
         <small>Tell the world about <span class="smcap">FFFFALLBACK</span>!</small>
       </p>
     </footer>  
@@ -100,7 +100,7 @@
 
     document.getElementById('bookmarklet').setAttribute('href', bookmarkletSource);
   </script>
-  <script type="text/javascript">
+  <script>
 
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-109790-10']);
