@@ -1,0 +1,13 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Link Checker
+      uses: peter-evans/link-checker@v1.1.0
+    - uses: actions/checkout@v1
