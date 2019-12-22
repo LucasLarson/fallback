@@ -9,5 +9,6 @@ jobs:
 
     steps:
     - name: Link Checker
-      uses: peter-evans/link-checker@v1.1.0
-    - uses: actions/checkout@v1
+      uses: peter-evans/link-checker@v1
+      with:
+        args: -v -r *
