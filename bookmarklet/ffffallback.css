@@ -306,7 +306,6 @@ input[type=text]::-webkit-input-placeholder {
   -webkit-border-radius: 4px!important;
   -moz-border-radius: 4px!important;
   border-radius: 4px!important;
-  text-shadow:!important;
   width:64px!important;
   -webkit-box-shadow: rgba(225, 225, 225, 0.4) 0px 1px 0px!important;
   text-shadow:#fff 0 1px 0!important;
