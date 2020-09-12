@@ -1,8 +1,8 @@
-#ffffallback-fontclass-inherit-parent {
+#fallback-fontclass-inherit-parent {
   font-family: inherit !important;
 }
 
-#ffffallback-content-container {
+#fallback-content-container {
   opacity:0.6!important;
   position: absolute!important;
   left: 0!important;
@@ -11,24 +11,24 @@
   z-index: 999999!important;
 }
 
-#ffffallback-controller .ffffallback-more-values {
+#fallback-controller .fallback-more-values {
   margin-left: 0px!important;
   margin-top:0px!important;
   width: 160px!important;
 }
 
-#ffffallback-controller .collapsed .ffffallback-more-values {
+#fallback-controller .collapsed .fallback-more-values {
   display: none!important;
 }
 
-#ffffallback-controller .expanded .ffffallback-disclosure span{
+#fallback-controller .expanded .fallback-disclosure span{
   -moz-transform: rotate(180deg)!important;
   -webkit-transform:rotate(180deg)!important;
   text-shadow:rgba(0,0,0,0.8) 0 1px 0!important;
   position:relative!important;
   top:6px!important;
 }
-#ffffallback-controller .ffffallback-disclosure {
+#fallback-controller .fallback-disclosure {
   display:inline-block!important;
   margin-left:2px!important;
   height:27px!important;
@@ -39,10 +39,10 @@
   -moz-border-radius:     3px!important;
   border-radius:          3px!important;
 }
-#ffffallback-controller .ffffallback-disclosure:hover {
+#fallback-controller .fallback-disclosure:hover {
   background:#111!important;
 }
-#ffffallback-controller .ffffallback-disclosure span{
+#fallback-controller .fallback-disclosure span{
   color: #777!important;
   display: inline-block!important;
   font-size:12px!important;
@@ -57,33 +57,33 @@
   -webkit-transition-duration: 0.25s!important;
 }
 
-#ffffallback-content-container * {
+#fallback-content-container * {
   color:rgb(255,0,255) !important;
 }
 
-body.ffffallback-hide-fallback #ffffallback-content-container {
+body.fallback-hide-fallback #fallback-content-container {
   display: none!important;
 }
 
-body.ffffallback-hide-original > * {
+body.fallback-hide-original > * {
   display: none!important;
 }
 
-body.ffffallback-hide-original #ffffallback-content-container {
+body.fallback-hide-original #fallback-content-container {
   display: block!important;
   opacity: 1!important;
 }
-#ffffallback-controller {
+#fallback-controller {
   margin:0;
   padding:0;
   border:0;
   outline:0;
   font-size:100%;
   vertical-align:baseline;
-  background:transparent; 
+  background:transparent;
 }
 
-#ffffallback-controller {
+#fallback-controller {
   display: block!important;
   position: fixed!important;
   right: 0px!important;
@@ -98,12 +98,12 @@ body.ffffallback-hide-original #ffffallback-content-container {
   z-index: 9999999!important;
 }
 
-#ffffallback-controller * {
+#fallback-controller * {
   font: inherit!important;
   margin: 0!important;
 }
 
-#ffffallback-controller h1 {
+#fallback-controller h1 {
   color:#313131!important;
   background-color: #cecece!important;
   background-image: -moz-linear-gradient(0deg, #cecece, #b3b3b3)!important;
@@ -114,8 +114,8 @@ body.ffffallback-hide-original #ffffallback-content-container {
   margin:0 !important;
   padding: 0.5em 1em !important;
 }
-#ffffallback-controller h1 abbr {
-  background:url(ffffallback-logo.png) no-repeat 0 0 !important;
+#fallback-controller h1 abbr {
+  background:url(fallback-logo.png) no-repeat 0 0 !important;
   border:0 !important;
   display:inline-block !important;
   height:16px !important;
@@ -123,19 +123,19 @@ body.ffffallback-hide-original #ffffallback-content-container {
   width:116px !important;
   text-indent:-99999em !important;
 }
-#ffffallback-controller ul {
+#fallback-controller ul {
   padding:0!important;
 }
-#ffffallback-controller #fb-font {
+#fallback-controller #fb-font {
   margin:0 0 0 1em!important;
   padding:2px!important;
 }
-#ffffallback-controller li {
+#fallback-controller li {
   list-style-type:disc!important;
   margin:0 0 10px 10px!important;
 }
 
-#ffffallback-radios {
+#fallback-radios {
   background:#B3B3B3!important;
   border-top:1px solid rgba(255,255,255,0.2)!important;
   margin:0px!important;
@@ -143,7 +143,7 @@ body.ffffallback-hide-original #ffffallback-content-container {
   clear:both!important;
   overflow:hidden!important;
 }
-#ffffallback-radios label.radio-checked {
+#fallback-radios label.radio-checked {
   background:#7C7C7C !important;
   background-image: none!important;
   color:#fff !important;
@@ -153,7 +153,7 @@ body.ffffallback-hide-original #ffffallback-content-container {
   -o-box-shadow:      inset 0 1px 5px rgba(0,0,0,0.65)!important;
   box-shadow:         inset 0 1px 5px rgba(0,0,0,0.65)!important;
 }
-#ffffallback-radios label {
+#fallback-radios label {
   background-image: -moz-linear-gradient(-90deg, #fefefe , #b7b7b7 )!important;
   background-image: -webkit-gradient(linear, 0 top, 0 bottom, from( #fefefe ), to( #b7b7b7 ))!important;
   background-image: linear-gradient(top, #fefefe, #b7b7b7)!important;
@@ -175,14 +175,14 @@ body.ffffallback-hide-original #ffffallback-content-container {
   -webkit-box-shadow: rgba(225, 225, 225, 0.4) 0px 1px 0px!important;
 }
 
-#ffffallback-radios label+label {
+#fallback-radios label+label {
   border: 1px solid #555!important;
   border-width: 1px!important;
   -webkit-border-radius: 0!important;
   -moz-border-radius: 0!important;
   border-radius: 0!important;
 }
-#ffffallback-radios label+label+label {
+#fallback-radios label+label+label {
   border-width:1px 1px 1px 0px!important;
   -webkit-border-top-right-radius:    3px!important;
   -webkit-border-bottom-right-radius: 3px!important;
@@ -191,7 +191,7 @@ body.ffffallback-hide-original #ffffallback-content-container {
   border-top-right-radius:            3px!important;
   border-bottom-right-radius:         3px!important;
 }
-#ffffallback-radios label:active, #ffffallback-update:active {
+#fallback-radios label:active, #fallback-update:active {
   background-image: -moz-linear-gradient(-90deg, #b9b9b9 , #969696 )!important;
   background-image: -webkit-gradient(linear, 0 top, 0 bottom, from( #b9b9b9 ), to( #969696 ))!important;
   background-image: linear-gradient(top, #b9b9b9, #969696)!important;
@@ -200,18 +200,18 @@ body.ffffallback-hide-original #ffffallback-content-container {
   -o-box-shadow:      inset 0 1px 5px rgba(0,0,0,0.75)!important;
   box-shadow:         inset 0 1px 5px rgba(0,0,0,0.75)!important;
 }
-#ffffallback-radios label input {
+#fallback-radios label input {
   display:none!important;
 }
 
-#ffffallback-instructions {
+#fallback-instructions {
   background:#B3B3B3!important;
-  
+
   font-weight:bold!important;
   padding:0.5em 1em!important;
 }
 
-#ffffallback-fonts {
+#fallback-fonts {
   list-style: none!important;
   margin-top: 0!important;
   height: 100% !important;
@@ -223,30 +223,30 @@ body.ffffallback-hide-original #ffffallback-content-container {
   box-shadow:         inset 0 2px 5px black!important;
 }
 
-#ffffallback-controller ::-webkit-scrollbar {
+#fallback-controller ::-webkit-scrollbar {
   width: 10px!important;
   height: 10px!important;
 }
 
-#ffffallback-controller ::-webkit-scrollbar-track-piece  {
+#fallback-controller ::-webkit-scrollbar-track-piece  {
   background-color: #3b3b3b!important;
   -webkit-border-radius: 6px!important;
 }
 
-#ffffallback-controller ::-webkit-scrollbar-thumb:vertical {
+#fallback-controller ::-webkit-scrollbar-thumb:vertical {
   height: 50px!important;
   background-color: #666!important;
   -webkit-border-radius: 6px!important;
 }
 
-#ffffallback-controller ::-webkit-scrollbar-button:start:decrement,
-#ffffallback-controller ::-webkit-scrollbar-button:end:increment  {
+#fallback-controller ::-webkit-scrollbar-button:start:decrement,
+#fallback-controller ::-webkit-scrollbar-button:end:increment  {
   height: 2px!important;
   display: block!important;
   background-color: transparent!important;
 }
 
-#ffffallback-fonts li {
+#fallback-fonts li {
   border-bottom:1px solid #222!important;
   border-top:1px solid #444!important;
   list-style: none!important;
@@ -254,17 +254,17 @@ body.ffffallback-hide-original #ffffallback-content-container {
   padding:0.5em 0 1em 1em!important;
 }
 
-#ffffallback-fonts li b {
+#fallback-fonts li b {
   display: block!important;
   font-size:14px!important;
   text-shadow: #1a1a1a 0px 1px 0px!important;
 }
-#ffffallback-fonts li b.global {
+#fallback-fonts li b.global {
   font-style:italic!important;
   margin-top:5px!important;
   position:relative!important;
 }
-#ffffallback-fonts li b.global i {
+#fallback-fonts li b.global i {
   background: #333!important;
   color:#aaa!important;
   font-size: 11px!important;
@@ -277,7 +277,7 @@ body.ffffallback-hide-original #ffffallback-content-container {
   top: -18px!important;
 }
 
-#ffffallback-fonts li input, #ffffallback-fonts li textarea {
+#fallback-fonts li input, #fallback-fonts li textarea {
   color: #f2f2f2!important;
   display: inline-block!important;
   -webkit-box-shadow: rgb(68, 68, 68) 0px 1px 0px!important;
@@ -292,7 +292,7 @@ body.ffffallback-hide-original #ffffallback-content-container {
 input[type=text]::-webkit-input-placeholder {
   color:#a9a9a9!important;
  }
-#ffffallback-update {
+#fallback-update {
   padding:4px 9px!important;
   border-radius: 5px!important;
   border:0!important;
