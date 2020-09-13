@@ -60,15 +60,15 @@
   background: #111 !important;
 }
 
+body.fallback-hide-original > * {
+  display: none !important;
+}
+
 #fallback-content-container * {
   color: rgb(255, 0, 255) !important;
 }
 
 body.fallback-hide-fallback #fallback-content-container {
-  display: none !important;
-}
-
-body.fallback-hide-original > * {
   display: none !important;
 }
 
