@@ -203,8 +203,7 @@ body.fallback-hide-original #fallback-content-container {
   border-bottom-right-radius: 3px !important;
 }
 
-#fallback-radios label:active,
-#fallback-update:active {
+#fallback-radios label:active {
   background-image: -moz-linear-gradient(-90deg, #b9b9b9, #969696) !important;
   background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#b9b9b9), to(#969696)) !important;
   background-image: linear-gradient(top, #b9b9b9, #969696) !important;
@@ -314,11 +313,11 @@ input[type=text]::-webkit-input-placeholder {
   padding: 4px 9px !important;
   border-radius: 5px !important;
   border: 0 !important;
-  font: bold 12px/1.5 helvetica !important;
+  font: bold 12px/1.5 Helvetica, sans-serif !important;
   color: #444 !important;
   background-image: -moz-linear-gradient(-90deg, #fefefe, #b7b7b7) !important;
   background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#fefefe), to(#b7b7b7)) !important;
-  background-image: linear-gradient(top, #fefefe, #b7b7b7) !important;
+  background-image: linear-gradient(to top, #fefefe, #b7b7b7) !important;
   border: 1px solid #555 !important;
   border: 1px solid #3d3d3d !important;
   color: #313131 !important;
@@ -332,4 +331,14 @@ input[type=text]::-webkit-input-placeholder {
   position: relative !important;
   right: -24px !important;
   cursor: pointer !important;
+}
+
+#fallback-update:active {
+  background-image: -moz-linear-gradient(-90deg, #b9b9b9, #969696) !important;
+  background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#b9b9b9), to(#969696)) !important;
+  background-image: linear-gradient(top, #b9b9b9, #969696) !important;
+  -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+  -o-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
 }
