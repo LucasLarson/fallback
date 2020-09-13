@@ -88,15 +88,15 @@
     var jsURL = baseURL + 'bookmarklet/fallback.js?r=' + Math.random();
     var cssURL = baseURL + 'bookmarklet/fallback.css?r=' + Math.random();
     var bookmarkletSource = 'javascript:' +
-"(function() {\
-  var scriptTag = document.createElement('script');\
-  scriptTag.setAttribute('src', '" + jsURL + "');\
-  var linkTag = document.createElement('link');\
-  linkTag.setAttribute('href', '" + cssURL + "');\
-  linkTag.setAttribute('rel','stylesheet');\
-  document.body.appendChild(scriptTag);\
-  document.body.appendChild(linkTag);\
-})();".replace(/\n/g, ' ');
+"(function () { \
+  var scriptTag = document.createElement('script') \
+  scriptTag.setAttribute('src', '" + jsURL + "') \
+  var linkTag = document.createElement('link') \
+  linkTag.setAttribute('href', '" + cssURL + "') \
+  linkTag.setAttribute('rel', 'stylesheet') \
+  document.body.appendChild(scriptTag) \
+  document.body.appendChild(linkTag) \
+})()".replace(/\n/g, ' ');
 
     document.getElementById('bookmarklet').setAttribute('href', bookmarkletSource);
   </script>
