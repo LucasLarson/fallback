@@ -166,7 +166,7 @@ body.fallback-hide-original #fallback-content-container {
 #fallback-radios label {
   background-image: -moz-linear-gradient(-90deg, #fefefe, #b7b7b7) !important;
   background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#fefefe), to(#b7b7b7)) !important;
-  background-image: linear-gradient(top, #fefefe, #b7b7b7) !important;
+  background-image: linear-gradient(to top, #fefefe, #b7b7b7) !important;
   border: 1px solid #555 !important;
   border-width: 1px 0 1px 1px !important;
   color: #313131 !important;
