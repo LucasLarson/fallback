@@ -21,6 +21,21 @@
   display: none !important;
 }
 
+#fallback-controller .fallback-disclosure span {
+  color: #777 !important;
+  display: inline-block !important;
+  font-size: 12px !important;
+  position: relative !important;
+  left: 4px !important;
+  top: 7px !important;
+  text-decoration: none !important;
+  text-shadow: rgba(0, 0, 0, 0.8) 0 -1px 0 !important;
+  -moz-transition-property: -moz-transform !important;
+  -moz-transition-duration: 0.125s !important;
+  -webkit-transition-property: -webkit-transform !important;
+  -webkit-transition-duration: 0.25s !important;
+}
+
 #fallback-controller .expanded .fallback-disclosure span {
   -moz-transform: rotate(180deg) !important;
   -webkit-transform: rotate(180deg) !important;
@@ -43,21 +58,6 @@
 
 #fallback-controller .fallback-disclosure:hover {
   background: #111 !important;
-}
-
-#fallback-controller .fallback-disclosure span {
-  color: #777 !important;
-  display: inline-block !important;
-  font-size: 12px !important;
-  position: relative !important;
-  left: 4px !important;
-  top: 7px !important;
-  text-decoration: none !important;
-  text-shadow: rgba(0, 0, 0, 0.8) 0 -1px 0 !important;
-  -moz-transition-property: -moz-transform !important;
-  -moz-transition-duration: 0.125s !important;
-  -webkit-transition-property: -webkit-transform !important;
-  -webkit-transition-duration: 0.25s !important;
 }
 
 #fallback-content-container * {
