@@ -84,10 +84,6 @@ body.fallback-hide-original #fallback-content-container {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
-}
-
-#fallback-controller {
   display: block !important;
   position: fixed !important;
   right: 0 !important;
