@@ -1,0 +1,344 @@
+#fallback-fontclass-inherit-parent {
+  font-family: inherit !important;
+}
+
+#fallback-content-container {
+  opacity: 0.6 !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 999999 !important;
+}
+
+#fallback-controller .fallback-more-values {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  width: 160px !important;
+}
+
+#fallback-controller .collapsed .fallback-more-values {
+  display: none !important;
+}
+
+#fallback-controller .fallback-disclosure span {
+  color: #777 !important;
+  display: inline-block !important;
+  font-size: 12px !important;
+  position: relative !important;
+  left: 4px !important;
+  top: 7px !important;
+  text-decoration: none !important;
+  text-shadow: rgba(0, 0, 0, 0.8) 0 -1px 0 !important;
+  -moz-transition-property: -moz-transform !important;
+  -moz-transition-duration: 0.125s !important;
+  -webkit-transition-property: -webkit-transform !important;
+  -webkit-transition-duration: 0.25s !important;
+}
+
+#fallback-controller .expanded .fallback-disclosure span {
+  -moz-transform: rotate(180deg) !important;
+  -webkit-transform: rotate(180deg) !important;
+  text-shadow: rgba(0, 0, 0, 0.8) 0 1px 0 !important;
+  position: relative !important;
+  top: 6px !important;
+}
+
+#fallback-controller .fallback-disclosure {
+  display: inline-block !important;
+  margin-left: 2px !important;
+  height: 27px !important;
+  width: 20px !important;
+  position: relative !important;
+  top: -7px !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  border-radius: 3px !important;
+}
+
+#fallback-controller .fallback-disclosure:hover {
+  background: #111 !important;
+}
+
+body.fallback-hide-original > * {
+  display: none !important;
+}
+
+#fallback-content-container * {
+  color: rgb(255, 0, 255) !important;
+}
+
+body.fallback-hide-fallback #fallback-content-container {
+  display: none !important;
+}
+
+body.fallback-hide-original #fallback-content-container {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+#fallback-controller {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+#fallback-controller {
+  display: block !important;
+  position: fixed !important;
+  right: 0 !important;
+  top: 0 !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font: 13px/1em normal helvetica, arial, sans-serif !important;
+  width: 220px !important;
+  height: 100% !important;
+  text-align: left !important;
+  z-index: 9999999 !important;
+}
+
+#fallback-controller * {
+  font: inherit !important;
+  margin: 0 !important;
+}
+
+#fallback-controller h1 {
+  color: #313131 !important;
+  background-color: #cecece !important;
+  background-image: -moz-linear-gradient(0deg, #cecece, #b3b3b3) !important;
+  background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#cecece), to(#b3b3b3)) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+  text-shadow: rgba(255, 255, 255, 0.6) 0 1px 0 !important;
+  font-weight: bold !important;
+  margin: 0 !important;
+  padding: 0.5em 1em !important;
+}
+
+#fallback-controller h1 abbr {
+  background: url(fallback-logo.png) no-repeat 0 0 !important;
+  border: 0 !important;
+  display: inline-block !important;
+  height: 16px !important;
+  margin-left: -9px !important;
+  width: 116px !important;
+  text-indent: -99999em !important;
+}
+
+#fallback-controller ul {
+  padding: 0 !important;
+}
+
+#fallback-controller #fb-font {
+  margin: 0 0 0 1em !important;
+  padding: 2px !important;
+}
+
+#fallback-controller li {
+  list-style-type: disc !important;
+  margin: 0 0 10px 10px !important;
+}
+
+#fallback-radios {
+  background: #b3b3b3 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+  margin: 0 !important;
+  padding: 4px 3px 4px 4px !important;
+  clear: both !important;
+  overflow: hidden !important;
+}
+
+#fallback-radios label.radio-checked {
+  background: #7c7c7c !important;
+  background-image: none !important;
+  color: #fff !important;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0 !important;
+  -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.65) !important;
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.65) !important;
+  -o-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.65) !important;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.65) !important;
+}
+
+#fallback-radios label {
+  background-image: -moz-linear-gradient(-90deg, #fefefe, #b7b7b7) !important;
+  background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#fefefe), to(#b7b7b7)) !important;
+  background-image: linear-gradient(to top, #fefefe, #b7b7b7) !important;
+  border: 1px solid #555 !important;
+  border-width: 1px 0 1px 1px !important;
+  color: #313131 !important;
+  float: left !important;
+  margin: 0 !important;
+  padding: 4px 0 !important;
+  text-align: center !important;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 !important;
+  width: 68px !important;
+  -webkit-border-top-left-radius: 3px !important;
+  -webkit-border-bottom-left-radius: 3px !important;
+  -moz-border-radius-topleft: 3px !important;
+  -moz-border-radius-bottomleft: 3px !important;
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+  -webkit-box-shadow: rgba(225, 225, 225, 0.4) 0 1px 0 !important;
+}
+
+#fallback-radios label + label {
+  border: 1px solid #555 !important;
+  border-width: 1px !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+#fallback-radios label + label + label {
+  border-width: 1px 1px 1px 0 !important;
+  -webkit-border-top-right-radius: 3px !important;
+  -webkit-border-bottom-right-radius: 3px !important;
+  -moz-border-radius-topright: 3px !important;
+  -moz-border-radius-bottomright: 3px !important;
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+
+#fallback-radios label:active {
+  background-image: -moz-linear-gradient(-90deg, #b9b9b9, #969696) !important;
+  background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#b9b9b9), to(#969696)) !important;
+  background-image: linear-gradient(top, #b9b9b9, #969696) !important;
+  -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+  -o-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+}
+
+#fallback-radios label input {
+  display: none !important;
+}
+
+#fallback-instructions {
+  background: #b3b3b3 !important;
+  font-weight: bold !important;
+  padding: 0.5em 1em !important;
+}
+
+#fallback-fonts {
+  list-style: none !important;
+  margin-top: 0 !important;
+  height: 100% !important;
+  max-height: 500px !important;
+  overflow-y: auto !important;
+  -moz-box-shadow: inset 0 2px 5px black !important;
+  -webkit-box-shadow: inset 0 2px 5px black !important;
+  -o-box-shadow: inset 0 2px 5px black !important;
+  box-shadow: inset 0 2px 5px black !important;
+}
+
+#fallback-controller ::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+#fallback-controller ::-webkit-scrollbar-track-piece {
+  background-color: #3b3b3b !important;
+  -webkit-border-radius: 6px !important;
+}
+
+#fallback-controller ::-webkit-scrollbar-thumb:vertical {
+  height: 50px !important;
+  background-color: #666 !important;
+  -webkit-border-radius: 6px !important;
+}
+
+#fallback-controller ::-webkit-scrollbar-button:start:decrement,
+#fallback-controller ::-webkit-scrollbar-button:end:increment {
+  height: 2px !important;
+  display: block !important;
+  background-color: transparent !important;
+}
+
+#fallback-fonts li {
+  border-bottom: 1px solid #222 !important;
+  border-top: 1px solid #444 !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0.5em 0 1em 1em !important;
+}
+
+#fallback-fonts li b {
+  display: block !important;
+  font-size: 14px !important;
+  text-shadow: #1a1a1a 0 1px 0 !important;
+}
+
+#fallback-fonts li b.global {
+  font-style: italic !important;
+  margin-top: 5px !important;
+  position: relative !important;
+}
+
+#fallback-fonts li b.global i {
+  background: #333 !important;
+  color: #aaa !important;
+  font-size: 11px !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  left: 80px !important;
+  padding: 0 5px !important;
+  position: absolute !important;
+  text-transform: uppercase !important;
+  top: -18px !important;
+}
+
+#fallback-fonts li input,
+#fallback-fonts li textarea {
+  color: #f2f2f2 !important;
+  display: inline-block !important;
+  -webkit-box-shadow: rgb(68, 68, 68) 0 1px 0 !important;
+  background: rgb(102, 102, 102) !important;
+  border: 1px solid black !important;
+  border-radius: 4px !important;
+  font: normal 13px/1.125 Helvetica, sans-serif !important;
+  padding: 5px !important;
+  width: 160px !important;
+  margin-top: 10px !important;
+}
+
+input[type=text]::-webkit-input-placeholder {
+  color: #a9a9a9 !important;
+}
+
+#fallback-update {
+  padding: 4px 9px !important;
+  border-radius: 5px !important;
+  border: 0 !important;
+  font: bold 12px/1.5 Helvetica, sans-serif !important;
+  color: #444 !important;
+  background-image: -moz-linear-gradient(-90deg, #fefefe, #b7b7b7) !important;
+  background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#fefefe), to(#b7b7b7)) !important;
+  background-image: linear-gradient(to top, #fefefe, #b7b7b7) !important;
+  border: 1px solid #555 !important;
+  border: 1px solid #3d3d3d !important;
+  color: #313131 !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  border-radius: 4px !important;
+  width: 64px !important;
+  -webkit-box-shadow: rgba(225, 225, 225, 0.4) 0 1px 0 !important;
+  text-shadow: #fff 0 1px 0 !important;
+  text-decoration: none !important;
+  position: relative !important;
+  right: -24px !important;
+  cursor: pointer !important;
+}
+
+#fallback-update:active {
+  background-image: -moz-linear-gradient(-90deg, #b9b9b9, #969696) !important;
+  background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#b9b9b9), to(#969696)) !important;
+  background-image: linear-gradient(top, #b9b9b9, #969696) !important;
+  -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+  -o-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75) !important;
+}

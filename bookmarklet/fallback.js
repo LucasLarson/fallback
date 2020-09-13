@@ -2,7 +2,7 @@
 'use strict';
 (function () {
   if (navigator.userAgent.indexOf('MSIE') >= 0 || navigator.userAgent.indexOf('Firefox/3') >= 0) {
-    return window.alert('FFFFALLBACK only works in Chrome, Safari, and Firefox 4 right now. :(\n\nSorry,\n - Mark')
+    return window.alert('Fallback only works in Chrome, Safari, and Firefox 4 right now. :(\n\nSorry,\n - Mark')
   }
 
   var $ = {
@@ -173,7 +173,7 @@
     if (index < 0) {
       return false
     } else {
-      return 'ffffallback-fontclass-' + index
+      return 'fallback-fontclass-' + index
     }
   }
 
@@ -213,7 +213,7 @@
       if (className) {
         //  Only add the class name if the font is different from the parent element
         //  or if this element explicitly defines the parent's font.
-        className = className || 'ffffallback-fontclass-inherit-parent'
+        className = className || 'fallback-fontclass-inherit-parent'
         $.addClassToElement(className, elem)
       }
     }
@@ -246,7 +246,7 @@
     var cssText = ''
 
     $.each(cssObject, function (declarations, selector) {
-      cssText += '#ffffallback-content-container ' + selector + ' {\n'
+      cssText += '#fallback-content-container ' + selector + ' {\n'
       cssText += '  color: magenta !important;\n'
       $.each(declarations, function (value, key) {
         if (key === 'x-more') {
@@ -258,10 +258,10 @@
       cssText += '}\n\n'
     })
 
-    var styleElement = document.getElementById('ffffallback-css')
+    var styleElement = document.getElementById('fallback-css')
     if (!styleElement) {
       styleElement = $.createElementWithContent('style', '')
-      styleElement.setAttribute('id', 'ffffallback-css')
+      styleElement.setAttribute('id', 'fallback-css')
       document.body.appendChild(styleElement)
     }
 
@@ -283,7 +283,7 @@
     window.console.log('start')
 
     var clonedCopy = $.createElementWithContent('div', document.body.innerHTML)
-    clonedCopy.setAttribute('id', 'ffffallback-content-container')
+    clonedCopy.setAttribute('id', 'fallback-content-container')
 
     //  Copy padding. TBD -- give cloned copy negative version of padding as margin
     //  to counteract positioning? Doesn't seem necessary but not sure why.
@@ -299,19 +299,19 @@
     window.console.log('Added font classes')
 
     //  OK, now add the controller
-    var controller = $.createElementWithContent('div', '\n<form id="ffffallback-toggles">\n<h1 id="ffffallback-title"><abbr title="Fast, flexible font fallback!">ffffallback!</abbr> <input type="submit" id="ffffallback-update" value="Update" /></h1>\n<div id="ffffallback-radios">\n<label><input type="radio" name="ffffallback-display-mode" accesskey="o" id="ffffallback-display-mode-original" /> Web font</label>\n<label class="radio-checked"><input type="radio" name="ffffallback-display-mode" accesskey="b" id="ffffallback-display-mode-both" checked /> Both</label>\n<label><input type="radio" name="ffffallback-display-mode" accesskey="f" id="ffffallback-display-mode-fallback" /> Fallback</label>\n</div>\n<!--<div id="ffffallback-instructions">Test fallback fonts for each web font declaration.</div-->\n<ul id="ffffallback-fonts"></ul>\n</form>\n')
-    controller.setAttribute('id', 'ffffallback-controller')
+    var controller = $.createElementWithContent('div', '\n<form id="fallback-toggles">\n<h1 id="fallback-title"><abbr title="Fast, flexible font fallback!">fallback!</abbr> <input type="submit" id="fallback-update" value="Update" /></h1>\n<div id="fallback-radios">\n<label><input type="radio" name="fallback-display-mode" accesskey="o" id="fallback-display-mode-original" /> Web font</label>\n<label class="radio-checked"><input type="radio" name="fallback-display-mode" accesskey="b" id="fallback-display-mode-both" checked /> Both</label>\n<label><input type="radio" name="fallback-display-mode" accesskey="f" id="fallback-display-mode-fallback" /> Fallback</label>\n</div>\n<!--<div id="fallback-instructions">Test fallback fonts for each web font declaration.</div-->\n<ul id="fallback-fonts"></ul>\n</form>\n')
+    controller.setAttribute('id', 'fallback-controller')
     window.console.log('adding controller')
     document.body.appendChild(controller)
-    var fontList = document.getElementById('ffffallback-fonts')
+    var fontList = document.getElementById('fallback-fonts')
     fontList.innerHTML = ''
 
     //  Size the controller
     var resizeController = function () {
-      var controller = document.getElementById('ffffallback-controller')
-      var title = document.getElementById('ffffallback-title')
-      var fonts = document.getElementById('ffffallback-fonts')
-      var toggles = document.getElementById('ffffallback-toggles')
+      var controller = document.getElementById('fallback-controller')
+      var title = document.getElementById('fallback-title')
+      var fonts = document.getElementById('fallback-fonts')
+      var toggles = document.getElementById('fallback-toggles')
 
       var maxHeight = controller.offsetHeight - (title.offsetHeight + toggles.offsetHeight)
       fonts.style.maxHeight = maxHeight + 'px'
@@ -324,7 +324,7 @@
       var row = $.createElementWithContent('li', content)
       row.setAttribute('class', 'collapsed')
 
-      $.event(row.getElementsByClassName('ffffallback-disclosure')[0], 'click', function (e) {
+      $.event(row.getElementsByClassName('fallback-disclosure')[0], 'click', function (e) {
         if ($.isClassOnElement('collapsed', row)) {
           $.addClassToElement('expanded', row)
           $.removeClassFromElement('collapsed', row)
@@ -335,11 +335,11 @@
         e.preventDefault()
         return false
       })
-      $.event(row.getElementsByClassName('ffffallback-specify-font')[0], 'change', function (e) {
-        document.getElementById('ffffallback-update').click()
+      $.event(row.getElementsByClassName('fallback-specify-font')[0], 'change', function (e) {
+        document.getElementById('fallback-update').click()
       })
-      $.event(row.getElementsByClassName('ffffallback-more-values')[0], 'change', function (e) {
-        document.getElementById('ffffallback-update').click()
+      $.event(row.getElementsByClassName('fallback-more-values')[0], 'change', function (e) {
+        document.getElementById('fallback-update').click()
       })
 
       fontList.appendChild(row)
@@ -350,13 +350,13 @@
     var fontClass, row
     $.each($.getAllFontsInUse(document.body), function (font) {
       fontClass = $.getClassForFont(font)
-      addRowWithContent('<b>' + font + '</b><input type="text" value="" placeholder="Fallback font" class="ffffallback-specify-font" data:font-class="' + fontClass + '" /><a href="#" class="ffffallback-disclosure"><span>&#x25bc;</span></a><textarea class="ffffallback-more-values" placeholder="e.g. line-height: 1.75 !important;"></textarea>')
+      addRowWithContent('<b>' + font + '</b><input type="text" value="" placeholder="Fallback font" class="fallback-specify-font" data:font-class="' + fontClass + '" /><a href="#" class="fallback-disclosure"><span>&#x25bc;</span></a><textarea class="fallback-more-values" placeholder="e.g. line-height: 1.75 !important;"></textarea>')
     })
-    addRowWithContent('<b class="global"><i>Or</i> Set a global fallback</b><input type="text" value="" placeholder="Fallback font" class="ffffallback-specify-font" data:font-class="*" /><a href="#" class="ffffallback-disclosure"><span>&#x25bc;</span></a><textarea class="ffffallback-more-values" placeholder="e.g. line-height: 1.75 !important;"></textarea>')
+    addRowWithContent('<b class="global"><i>Or</i> Set a global fallback</b><input type="text" value="" placeholder="Fallback font" class="fallback-specify-font" data:font-class="*" /><a href="#" class="fallback-disclosure"><span>&#x25bc;</span></a><textarea class="fallback-more-values" placeholder="e.g. line-height: 1.75 !important;"></textarea>')
 
-    $.event(document.getElementById('ffffallback-display-mode-original'), 'click', function () {
-      $.removeClassFromElement('ffffallback-hide-original', document.body)
-      $.addClassToElement('ffffallback-hide-fallback', document.body)
+    $.event(document.getElementById('fallback-display-mode-original'), 'click', function () {
+      $.removeClassFromElement('fallback-hide-original', document.body)
+      $.addClassToElement('fallback-hide-fallback', document.body)
 
       $.each(document.getElementsByClassName('radio-checked'), function (elem) {
         $.removeClassFromElement('radio-checked', elem)
@@ -365,9 +365,9 @@
       $.addClassToElement('radio-checked', this.parentNode)
       window.console.log(document.body.className)
     })
-    $.event(document.getElementById('ffffallback-display-mode-both'), 'click', function () {
-      $.removeClassFromElement('ffffallback-hide-original', document.body)
-      $.removeClassFromElement('ffffallback-hide-fallback', document.body)
+    $.event(document.getElementById('fallback-display-mode-both'), 'click', function () {
+      $.removeClassFromElement('fallback-hide-original', document.body)
+      $.removeClassFromElement('fallback-hide-fallback', document.body)
       $.each(document.getElementsByClassName('radio-checked'), function (elem) {
         window.console.log('Oh elem is!', elem)
         $.removeClassFromElement('radio-checked', elem)
@@ -375,9 +375,9 @@
       $.addClassToElement('radio-checked', this.parentNode)
       window.console.log(document.body.className)
     })
-    $.event(document.getElementById('ffffallback-display-mode-fallback'), 'click', function () {
-      $.addClassToElement('ffffallback-hide-original', document.body)
-      $.removeClassFromElement('ffffallback-hide-fallback', document.body)
+    $.event(document.getElementById('fallback-display-mode-fallback'), 'click', function () {
+      $.addClassToElement('fallback-hide-original', document.body)
+      $.removeClassFromElement('fallback-hide-fallback', document.body)
       $.each(document.getElementsByClassName('radio-checked'), function (elem) {
         $.removeClassFromElement('radio-checked', elem)
       })
@@ -385,18 +385,18 @@
       window.console.log(document.body.className)
     })
 
-    $.event(document.getElementById('ffffallback-update'), 'click', function (e) {
+    $.event(document.getElementById('fallback-update'), 'click', function (e) {
       e.preventDefault()
 
       window.console.log('Updating')
 
       var cssDeclarations = {}
-      $.each(document.getElementsByClassName('ffffallback-specify-font'), function (fontInput) {
+      $.each(document.getElementsByClassName('fallback-specify-font'), function (fontInput) {
         // var className = fontInput.getAttribute('data:font-class');
         if (!fontInput.getAttribute) {
           return
         }
-        var moreTextArea = fontInput.parentNode.getElementsByClassName('ffffallback-more-values')[0]
+        var moreTextArea = fontInput.parentNode.getElementsByClassName('fallback-more-values')[0]
         var className = fontInput.getAttribute('data:font-class')
         var selector = (className === '*') ? '*' : ('.' + className)
         var value = $.trimString(fontInput.value)
