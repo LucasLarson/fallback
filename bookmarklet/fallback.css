@@ -144,7 +144,7 @@ body.fallback-hide-original #fallback-content-container {
 }
 
 #fallback-radios {
-  background: #B3B3B3 !important;
+  background: #b3b3b3 !important;
   border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
   margin: 0 !important;
   padding: 4px 3px 4px 4px !important;
@@ -153,7 +153,7 @@ body.fallback-hide-original #fallback-content-container {
 }
 
 #fallback-radios label.radio-checked {
-  background: #7C7C7C !important;
+  background: #7c7c7c !important;
   background-image: none !important;
   color: #fff !important;
   text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0 !important;
@@ -219,7 +219,7 @@ body.fallback-hide-original #fallback-content-container {
 }
 
 #fallback-instructions {
-  background: #B3B3B3 !important;
+  background: #b3b3b3 !important;
   font-weight: bold !important;
   padding: 0.5em 1em !important;
 }
@@ -320,7 +320,7 @@ input[type=text]::-webkit-input-placeholder {
   background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#fefefe), to(#b7b7b7)) !important;
   background-image: linear-gradient(top, #fefefe, #b7b7b7) !important;
   border: 1px solid #555 !important;
-  border: 1px solid #3D3D3D !important;
+  border: 1px solid #3d3d3d !important;
   color: #313131 !important;
   -webkit-border-radius: 4px !important;
   -moz-border-radius: 4px !important;

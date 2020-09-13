@@ -92,16 +92,16 @@ section {
   display: block;
 }
 
-article:after,
-aside:after,
-div:after,
-form:after,
-header:after,
-hgroup:after,
-nav:after,
-section:after,
-ul:after,
-ol:after {
+article::after,
+aside::after,
+div::after,
+form::after,
+header::after,
+hgroup::after,
+nav::after,
+section::after,
+ul::after,
+ol::after {
   clear: both;
   content: ".";
   display: block;
@@ -118,10 +118,10 @@ q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: '';
   content: none;
 }
@@ -218,7 +218,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1em
+  font-size: 1em;
 }
 
 h5 {
@@ -366,10 +366,6 @@ textarea {
 }
 /* colors for form validity */
 
-input:valid,
-textarea:valid {
-}
-
 input:invalid,
 textarea:invalid {
   border-radius: 1px;
@@ -378,10 +374,10 @@ textarea:invalid {
   box-shadow: 0px 0px 5px red;
 }
 
-/*::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }*/
+/* ::-moz-selection{ background: #ff5e99; color: #fff; text-shadow: none; }
+::selection { background:ff5e99; color: #fff; text-shadow: none; } */
 a:link {
-  -webkit-tap-highlight-color: #FF5E99;
+  -webkit-tap-highlight-color: ff5e99;
 }
 
 button {
@@ -398,15 +394,15 @@ button {
   display: block;
 }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix::before,
+.clearfix::after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden;
 }
 
-.clearfix:after {
+.clearfix::after {
   clear: both;
 }
 
@@ -433,7 +429,7 @@ body {
 }
 
 span.horizon {
-  border-top: 1px solid #423E39;
+  border-top: 1px solid #423e39;
   height: 1px;
   margin-left: 0;
   position: absolute;
@@ -485,7 +481,7 @@ hgroup h1 {
   margin-left: 0;
 }
 
-hgroup h1:before {
+hgroup h1::before {
   content: "F";
   background: #fef1d8;
   border: 1px solid #2d2a27;
@@ -538,7 +534,7 @@ hgroup h2 {
   background: #9b3d17;
 }
 
-.brave:before {
+.brave::before {
   content: "";
   background: #9b3d17;
   position: absolute;
@@ -621,15 +617,15 @@ hgroup + p + p {
 .bkmrklt a {
   background: #413e3c;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #2D2A27;
-  color: #F0E4CC;
+  border: 1px solid #2d2a27;
+  color: #f0e4cc;
   font-family: "kulturista-web-1", "kulturista-web-2", "Courier New";
   font-size: 1.125em;
   padding: .5em 1em;
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0 1px 1px #2D2A27;
+  text-shadow: 0 1px 1px #2d2a27;
   z-index: 100;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -641,7 +637,7 @@ hgroup + p + p {
 }
 
 .ie6 .bkmrklt a {
-  color: #F0E4CC;
+  color: #f0e4cc;
 }
 
 .bkmrklt a:hover {
@@ -650,12 +646,12 @@ hgroup + p + p {
   -webkit-animation-timing-function: ease-in-out;
 }
 
-.bkmrklt a:after {
+.bkmrklt a::after {
   content: attr(data-drag);
   display: none;
 }
 
-.bkmrklt a:hover:after {
+.bkmrklt a:hover::after {
   background: rgba(0, 0, 0, 0.8);
   display: block;
   position: absolute;
@@ -745,7 +741,7 @@ footer p a[href="https://twitter.com/shinypb"] {
 }
 
 footer p a span {
-  color: rgba(143, 187, 204, 1)
+  color: rgba(143, 187, 204, 1);
 }
 
 footer p a[href="https://twitter.com/jbrewer"]:hover span,
@@ -843,17 +839,17 @@ footer .twitter-share-button {
     text-decoration: underline;
   }
 
-  a[href]:after {
+  a[href]::after {
     content: " (" attr(href) ")";
   }
 
-  abbr[title]:after {
+  abbr[title]::after {
     content: " (" attr(title) ")";
   }
 
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  .ir a::after,
+  a[href^="javascript:"]::after,
+  a[href^="#"]::after {
     content: "";
   }
 
