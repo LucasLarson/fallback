@@ -271,7 +271,7 @@ span.setting {
   border: 1px solid #423e39;
   border-width: 0 1px;
   margin: 0 4em;
-  padding: 3em 0 0 0;
+  padding: 3em 0 0;
   position: relative;
 }
 
@@ -282,7 +282,7 @@ span.setting {
 }
 
 hgroup {
-  margin: 0 0 12em 0;
+  margin: 0 0 12em;
 }
 
 hgroup h1 {
