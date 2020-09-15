@@ -82,7 +82,6 @@ body.fallback-hide-original #fallback-content-container {
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
   display: block !important;
   position: fixed !important;
@@ -307,7 +306,6 @@ input[type=text]::-webkit-input-placeholder {
 
 #fallback-update {
   padding: 4px 9px !important;
-  border: 0 !important;
   font: bold 12px/1.5 Helvetica, sans-serif !important;
   background-image: -moz-linear-gradient(-90deg, #fefefe, #b7b7b7) !important;
   background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(#fefefe), to(#b7b7b7)) !important;
