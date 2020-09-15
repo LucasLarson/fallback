@@ -16,8 +16,7 @@ name: Lint Code Base
 #############################
 on:
   push:
-    # branches-ignore: [main]
-    # uncomment to run only on non-`main` branches
+    branches-ignore:  # [main]
   pull_request:
     branches: [main]
 
@@ -49,3 +48,4 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
